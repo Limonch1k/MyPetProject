@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/bread_crumbs.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/load_header_footer.js"></script>
+    <script src="../js/load_vertival_menu.js"></script>
+    <script src="../js/load_news.js"></script>
+    <script src="../js/load_vertival_menu.js"></script>
+    <script src="/js/load_recent_view_items.js"></script>
+
+</head>
+
+<script>
+    function open_item()
+    {        
+        window.open("item_type_catalog.html", "_self")
+    };
+
+</script>
+
+
+<body>
+    <div id="header"></div>
+    <div class="bread_crumbs">
+        <p>Каталог</p>
+        <ul>
+            <li><a href="/index.html">Главная</a></li>
+            <li>Каталог</li>
+        </ul>
+    </div>
+    <div id="main_catalog">
+        <div id="left_menu">
+            <div id="vertical_menu"></div>
+            <div id="news"></div>
+        </div>
+        
+        
+        <div id="catalog">
+            
+            <ul id="catalog_main">
+                <li class="catalog_item" onclick="open_item()">
+                  <img src="/img/3.jpg" alt="">
+                  <div class="text_wrapper">
+                    <form action="">
+                        <p class="catalog_item_text">ауаefqfqйуйауайуа</p>
+                    </form>
+                    <form action="">
+                        <p class="catalog_item_text">ауаefqfqйуйауайуа</p>
+                    </form>
+                  </div>  
+                </li>    
+                   
+                   
+            </ul>
+            <ul id="catalog_main">
+                <li class="catalog_item" onclick="open_item()">
+                  <img src="/img/3.jpg" alt="">
+                  <div class="text_wrapper">
+                    <form action="">
+                        <p class="catalog_item_text">ауаefqfqйуйауайуа</p>
+                    </form>
+                    <form action="">
+                        <p class="catalog_item_text">ауаefqfqйуйауайуа</p>
+                    </form>
+                  </div>  
+                </li>    
+                   
+                   
+            </ul>
+            
+        
+        <div id="recent_view_items"></div>
+        </div>
+        
+    
+    </div>
+   
+
+    <div id="footer"></div>
+    
+</body>
+
+</html>

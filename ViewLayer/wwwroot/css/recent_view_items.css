@@ -1,0 +1,62 @@
+#recent_view_items
+{
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.recent_item
+{
+    display: inline-flex;
+    width: 19%;
+    height: 8em;
+    
+    background-color: rgb(200, 198, 198,0.3);
+    margin: 0.4%;
+    
+    align-items: center;
+    
+}
+
+.recent_item img
+{
+    display: block;
+    margin-left: 5%;
+    width: 40%;
+    
+    height: 80%;
+}
+
+#recent_view_title
+{
+    display: block;
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.recent_item_title
+{
+    display: block;
+    word-wrap:break-word;
+    height: 100%;
+    width: 60%;
+    padding: 3px;
+    
+    
+}
+
+.recent_item_price
+{
+    display: block;
+    padding: 3px;
+    width: 60%;
+}
+
+#recent_items_wrapper
+{
+    display: flex;
+    widows: 100%;
+    height: 100%;
+}

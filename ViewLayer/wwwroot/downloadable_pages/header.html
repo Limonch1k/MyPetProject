@@ -1,0 +1,103 @@
+<head>
+    <link rel="stylesheet" href="../css/header.css">
+    <script src="../js/search_bar_load.js"></script>
+</head>
+<header>
+    <div id="bg"></div>
+    <div id="info_container">
+        <div class="info_container_text">
+            <p>ул. Пушкина д Колотушкина</p>
+        </div>
+        <div id="request_call_header">
+            <div class="info_container_text">
+                <p id="header_phone_number"><i class="fa fa-phone" aria-hidden="true"></i>+375443331248</p>
+            </div>
+            
+            <div  id="href_request_call">
+                <a href="#" id="text_request_call">Запросить звонок</a>
+            </div>
+        </div>
+        <div id="compare_header">
+            <i class="fa fa-random fa-1.5x" aria-hidden="true" ></i>
+            <p>Сравнить</p>
+            <p id="index_items_cart">0</p>
+        </div>
+        <div id="cart_search_header">
+            <div class="info_container_text" id="cart_header">
+
+                <i class="fa fa-shopping-cart"></i> 
+                <p>Корзина</p>
+                <p id="index_items_cart">0</p>
+            </div>
+            <div class="info_container_text" id="search_wrapper">
+                <i class="fas fa-search"></i>
+                <p>Поиск</p>
+            </div>
+        </div>
+        <div id="search_bar">
+            <form action="">
+                <input type="text" id="search_text" placeholder="Search">
+                <button id="search_button" onclick="open_search_bar()"><i class="fas fa-search"></i></button>    
+                <button id="exit_button" onclick="exit_search_bar()"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </form>
+        </div>
+
+        <div id="request_call">
+            <p id="title_request_call">Заказать звонок</p>
+            <p id="close_request_call"><i class="fa fa-times fa-2x" aria-hidden="true"></i></p>
+            <form action="">
+                <p class="request_call_form_text">Ваше имя</p>
+                <input type="text" id="name_request_call">
+                <p class="request_call_form_text">Телефон</p>
+                <input type="text" id="phone_request_call">
+                <p class="request_call_form_text">Доп. информация</p>
+                <textarea name="" id="message_request_call" cols="30" rows="10"></textarea> 
+                <div id="request_call_police">
+                    <input type="checkbox" name="" id="check_request_call_police">
+                    <p id="check_request_call_title">Confirm police</p>
+                </div>
+                <button id="request_call_send_button">Отправить</button>
+            </form>
+        </div>
+        
+    </div>
+    <div id="logo_menu">
+        <a id="home_href" href="/index.html">
+        <div id="logo">
+            <figure><img src="../logo/ariston.jpg"></figure>
+
+            <p>Company's name</p>
+        </div>
+        </a>
+        <div id="logo_description">
+            <p>Федеральная сеть магазинов отопления</p>
+        </div>
+        
+        <div id="menu">
+            <ul class="main-menu">
+                <li class="active"><a href="/pages/catalog.html">Каталог</a></li>
+                <li class="menu-children">
+                    <a href="#url">Услуги</a>
+                    <ul>
+                        <li><a href="#url">Раздел 1</a></li>
+                        <li><a href="#url">Раздел 2</a></li>
+                        <li class="menu-children">
+                            <a href="#url">Подразделы</a>
+                            <ul>
+                                <li><a href="#url">Подраздел 1</a></li>
+                                <li><a href="#url">Подраздел 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#url">Наши работы</a></li>
+                <li><a href="#url">Новости</a></li>
+                <li><a href="#url">Фотогалерея</a></li>
+                <li><a href="#url">Контакты</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</header>
+
+

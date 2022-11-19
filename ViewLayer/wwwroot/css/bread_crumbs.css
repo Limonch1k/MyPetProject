@@ -1,0 +1,28 @@
+.bread_crumbs
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+a
+{
+    text-decoration:line-through;
+    color: black;
+}
+
+.bread_crumbs ul li
+{
+    display: block;
+    float: left;
+    margin-right: 1%;
+    color: black;
+}
+
+.bread_crumbs p
+{
+    color: black;
+    font-size: 1.5em;
+}

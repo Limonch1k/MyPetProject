@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Item</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/bread_crumbs.css">
+    <link rel="stylesheet" href="../css/item.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/load_header_footer.js"></script>
+    <script src="../js/load_vertival_menu.js"></script>
+    <script src="../js/load_news.js"></script>
+    <script src="../js/load_vertival_menu.js"></script>
+    <script src="/js/owl_carousel_item_preview.js"></script>
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <script src="/js/owl.carousel.min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="bread_crumbs">
+        <p>Каталог</p>
+        <ul>
+            <li>Главная</li>
+            <li>Каталог</li>
+            <li>Item type</li>
+            <li id="bread_crumbs_item_name">Item name</li>
+        </ul>
+    </div>
+    <div id="item_main">
+        <div id="vertical_menu"></div>
+        <div id="item_description">
+            <div id="item_gallery">
+                <img src="/img/1.jpg" class="gallery_highlight">
+               
+                <div class="gallery_preview">
+                    <div class="owl-carousel owl-theme">   
+                    <img src="/img/1.jpg" class="item" alt="">
+                    <img src="/img/2.jpg" class="item" alt="">
+                    <img src="/img/3.jpg" class="item" alt="">
+                    
+                    </div> 
+                </div>    
+                
+                
+            </div>
+            <div id="description">
+                <p id="item_article">Артикул: 13131</p>
+                <p id="item_desc">Мощность 24,6 кВт, отапливает до 246 кв.м. Закрытая камера сгорания. Гарантия: 2 года</p>
+                <p id="item_price">84000руб.</p>
+                <div id="add_basket">
+                    <form action="">
+                        <div id="minus_button">-</div>
+                        <p id="count_items">1</p>
+                        <div id="plus_button">+</div>
+                        <div id="add_to_basket">Добавить в корзину</div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div id="more_item_description">
+                <ul>
+                    <li id="button_desc">Описание</li>
+                    <li id="button_char">Характеристики</li>
+                    <li id="button_question">Задать вопрос</li>
+                </ul>
+            </div>
+            <div id="more_item_description_desc">
+                <p>afaefwfefaaa</p>
+            </div>
+            <div id="more_item_description_char">
+                <p>afa13131faaa</p>
+            </div>  
+            <div id="more_item_description_question">
+                <div id="question_form">
+                    
+                    <form action="">
+                        <div id="question_div">
+                            <p>Вопрос</p>
+                            <textarea name="" id="question_text" cols="30" rows="10"></textarea>
+                        </div>
+                        <div id="question_info">
+                            <p>Ваше имя</p>
+                            <textarea name="" id="questioner_name" cols="10" rows="1"></textarea>
+                            <p>Телефон</p>
+                            <textarea name="" id="questioner_phone" cols="10" rows="1"></textarea>
+                            <p>Почта</p>
+                            <textarea name="" id="questioner_mail" cols="10" rows="1"></textarea>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="check_box">
+                            <p id="text_submit">Согласен на обработку</p>
+                        </div>
+                        <button id="question_button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/js/item_gallery.js"></script>
+         
+    </div>
+    
+    
+    
+    
+    <div id="footer"></div>
+
+</body>
+
+</html>

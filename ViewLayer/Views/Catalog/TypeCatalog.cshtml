@@ -1,0 +1,78 @@
+﻿@model List<ProductClassPL>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/bread_crumbs.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/load_vertival_menu.js"></script>
+    <script src="../js/load_news.js"></script>
+    <script src="/js/load_recent_view_items.js"></script>
+
+</head>
+
+<script>
+
+    function open_item(Id)
+    {
+        document.getElementById('ProductClassIdValue').value = Id;
+        console.log(document.getElementById('ProductClassIdValue').value);
+        console.log(Id);
+        document.ProductClassIdForm.submit();
+    };
+
+</script>
+
+
+<body>
+
+    <form name="ProductClassIdForm" asp-action="CatalogProduct" asp-controller="Catalog" method="get">
+        <input value="" name="Id" id="ProductClassIdValue" hidden>
+    </form>
+
+
+    <div id="header"></div>
+    <div class="bread_crumbs">
+        <p>Каталог</p>
+        <ul>
+            <li><a href="/index.html">Главная</a></li>
+            <li>Каталог</li>
+        </ul>
+    </div>
+    <div id="main_catalog">
+        <div id="left_menu">
+            <div id="vertical_menu"></div>
+            <div id="news"></div>
+        </div>
+
+
+        <div id="catalog">
+
+            @foreach (var productClass in Model)
+            {
+                <ul id="catalog_main">
+                    <li class="catalog_item" onclick="open_item(@productClass.Id)">
+                        <img src=@productClass.LinkToImage alt="">
+                        <div class="text_wrapper">
+                            <form action="">
+                                <p class="catalog_item_text">@productClass.NameOfProduct</p>
+                            </form>                         
+                            <form action="">
+                                <p class="catalog_item_text">@productClass.NameOfProduct</p>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            }
+            <div id="recent_view_items"></div>
+        </div>
+
+
+    </div>
+
+
+    <div id="footer"></div>
+
+</body>
